@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Index pagina</title>
+<style type="text/css">
+
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		background: blue;
+		color: white;
+	}
+	
+	.container {
+		margin: 0 auto;
+		width: 80%;
+		text-align:center;
+		padding-top: 40px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1 th:text="${titulo}"></h1>
+	</div>
+
+</body>
+</html>

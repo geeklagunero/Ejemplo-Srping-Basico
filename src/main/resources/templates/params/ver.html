@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Recibir paramtros del request HTTP - GET</title>
+<style type="text/css">
+
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		background: blue;
+		color: white;
+	}
+	
+	.container {
+		margin: 0 auto;
+		width: 80%;
+		text-align:center;
+		padding-top: 40px;
+	}
+	
+	th {
+	color: red;
+	}
+</style>
+</head>
+<body>
+  <h1 th:text="${resultado}"></h1>
+</body>
+</html>

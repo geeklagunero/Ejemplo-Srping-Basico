@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Enviar paramtros del request HTTP - GET</title>
+<style type="text/css">
+
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		background: blue;
+		color: white;
+	}
+	
+	a {
+	color: white;
+	}
+	
+	.container {
+		margin: 0 auto;
+		width: 80%;
+		text-align:center;
+		padding-top: 40px;
+	}
+	
+	th {
+	color: red;
+	}
+</style>
+</head>
+<body>
+  <h1>Enviar paramtros del request HTTP - GET</h1>
+  <ul>
+  <li>
+  	<a th:href="@{/params/string(texto='hola Lenin desde linck')}">/params/string?texto=Hola Lenin desde link</a>
+  </li>
+  <br />
+  <li>
+  	<a th:href="@{/params/string(texto='hola John')}">/params/string?texto=Hola Jhone</a>
+  </li>
+  </ul>
+</body>
+</html>

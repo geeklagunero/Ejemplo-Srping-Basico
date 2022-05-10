@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Perfil de Usuario</title>
+<style type="text/css">
+
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		background: blue;
+		color: white;
+	}
+	
+	.container {
+		margin: 0 auto;
+		width: 80%;
+		text-align:center;
+		padding-top: 40px;
+	}
+</style>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<span th:text="${usuario.nombre}"></span>
+<span th:text="${usuario.apellido}"></span>
+<span th:if="${usuario.email}" th:text="${usuario.email}"></span>
+<span th:if="${usuario.email == null}">EL Usuario no tiene correo</span>
+</body>
+</html>
