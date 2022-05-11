@@ -30,16 +30,24 @@
 	color: red;
 	}
 </style>
-</head>
+</head>/mix-params-reques
 <body>
   <h1>Enviar paramtros del request HTTP - GET</h1>
   <ul>
   <li>
   	<a th:href="@{/params/string(texto='hola Lenin desde linck')}">/params/string?texto=Hola Lenin desde link</a>
   </li>
-  <br />
+  <br>
   <li>
   	<a th:href="@{/params/string(texto='hola John')}">/params/string?texto=Hola Jhone</a>
+  </li>
+  <br />
+  <li>
+  	<a th:href="@{/params/mix-params(saludo='HOla como estas', numero=7)}">/params/mix-params?saludo=Hola Como estas&numero=7</a>
+  </li>
+  <br />
+  <li>
+  	<a th:href="@{/params/mix-params-request(saludo='HOla como estas', numero=7)}">/params/mix-params-request?saludo=Hola Como estas&numero=7</a>
   </li>
   </ul>
 </body>
