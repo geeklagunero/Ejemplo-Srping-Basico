@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<style type="text/css">
+
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		background: blue;
+		color: white;
+	}
+	
+		a {
+	color: white;
+	}
+	
+	.container {
+		margin: 0 auto;
+		width: 80%;
+		text-align:center;
+		padding-top: 40px;
+	}
+	
+	th {
+	color: red;
+	}
+</style>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<ul>
+	<li>
+	<a th:href="@{/variables/string/} + 'Hola Andres'">/variables/string/Hola Andres</a>
+	</li>
+	<li>
+	<a th:href="@{/variables/string/} + 'Que tal Jho'">/variables/string/Que tal Jhon</a>
+	</li>
+	<li>
+	<a th:href="@{/variables/string/} + 'Hola Andres' + '/' + 7">/variables/string/Hola Andres/7</a>
+	</li>
+	</ul>
+</body>
+</html>
