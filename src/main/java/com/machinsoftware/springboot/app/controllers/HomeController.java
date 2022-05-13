@@ -17,7 +17,7 @@ public class HomeController {
 		return "redirect:http://www.google.com";
 	}
 	
-	@GetMapping("/")
+	@GetMapping("/hola")
 	public String HomeDos() {
 		//con el forward redireccionamos pero sin perder la peticion queya tenemos y todo los datos en ella
 		//puede server para seguir con los datos de un formulairo o de una session
